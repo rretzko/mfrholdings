@@ -27,12 +27,12 @@
         </style>
     </head>
     <body>
-        <main class="text-center bg-white/90 text-black mx-2 mt-20 mb-20 rounded-lg lg:mt-6 lg:mt-[25%] lg:w-1/3 lg:mx-auto lg:p-4 lg:rounded-lg">
-            <h1 class="text-4xl">MFR HOLDINGS, LLC</h1>
-            <h2 class="mt-2 text-2xl">We build tools for teachers of music.</h2>
+        <main class="text-center bg-white/90 text-black mx-2 mt-20 mb-20 rounded-lg sm:mt-4 lg:mt-6 lg:mt-[25%] lg:w-1/3 lg:mx-auto lg:p-4 lg:rounded-lg">
+            <h1 class="text-4xl sm:text-3xl">MFR HOLDINGS, LLC</h1>
+            <h2 class="mt-2 text-2xl sm:text-xl">We build tools for teachers of music.</h2>
         </main>
 
-        <div id="portfolio" class="ml-[25%] -mt-4 py-2 items-center">
+        <div id="portfolio" class="ml-[25%] -mt-4 py-2 items-center sm:bg-gray-100 sm:ml-[33%] sm:mb-12 sm:w-1/3 sm:p-4 sm:rounded-lg ">
             <div>Current Projects:</div>
             <div>
                 <ul>
@@ -59,7 +59,10 @@
 
         <div id="contactForm" class="bg-gray-200 p-4">
             <form method="post" action="" class="ml-4 ">
-                <h3>Need something built?  Contact us!</h3>
+                <h3 class="mb-4">
+                    Need something built?<br />
+                    <strong>Tell us about <i>your</i> Project!</strong>
+                </h3>
                 <div>
                     <label>
                         <div>Name</div>
