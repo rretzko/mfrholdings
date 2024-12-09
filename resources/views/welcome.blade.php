@@ -87,11 +87,20 @@
 
             </form>
         </div>
+
+        <footer class="bg-white relative bottom-4 mt-2">
+
+            <div class="flex flex-row justify-between mx-2 mt-4 items-center text-xs text-black dark:text-white/70 ">
+                <div>MFR HOLDINGS, LLC &copy; 2024</div>
+
+                <div>
+                    <a href="mailTo:rick@mfrholdings.com?subject=MFR Holdings, Contact us!&body=Hi, Rick" class="text-blue-500">
+                        Contact Us!
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+
     </body>
-
-{{--                    <footer class="py-16 text-center text-sm text-black dark:text-white/70">--}}
-{{--                        MFR HOLDINGS, LLC &copy; 2024--}}
-{{--                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})--}}
-{{--                    </footer>--}}
-
 </html>
