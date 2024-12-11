@@ -58,25 +58,31 @@
         <hr class="bg-gray-300"/>
 
         <div id="contactForm" class="bg-gray-200 p-4">
-            <form method="post" action="" class="ml-4 ">
+            <form method="post" action="{{ route('reachOut') }}" class="ml-4 ">
+                @csrf
                 <h3 class="mb-4">
                     Need something built?<br />
                     <strong>Tell us about <i>your</i> Project!</strong>
                 </h3>
+                <div class="bg-white/50 text-green-600 px-2 rounded-lg">
+                    @if(Session::has('success'))
+                        {{ Session::get('success') }}
+                    @endif
+                </div>
                 <div>
                     <label>
                         <div>Name</div>
-                        <input class="w-full" name="name" type="text" value="" required />
+                        <input class="w-full px-2" name="name" type="text" value="" required />
                     </label>
 
                     <label for="email">
                         <div>Email</div>
-                        <input class="w-full" name="email" type="email" value="" required />
+                        <input class="w-full px-2" name="email" type="email" value="" required />
                     </label>
 
                     <label for="message">
                         <div>Message</div>
-                        <textarea class="w-full" name="message" rows="5" ></textarea>
+                        <textarea class="w-full p-2" name="message" rows="5" ></textarea>
                     </label>
 
                     <div>
